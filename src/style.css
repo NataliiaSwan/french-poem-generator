@@ -23,15 +23,26 @@ h1 {
 header {
   margin-bottom: 30px;
 }
-form {
-  display: flex;
-  padding: 38px 56px;
+.form-container {
+  padding: 28px 46px;
   background-color: rgb(252, 233, 210);
   border-radius: 10px;
   box-shadow: 0px 20px 40px rgb(175, 147, 112);
   border-radius: 10px;
   margin-bottom: 30px;
 }
+
+form {
+  display: flex;
+}
+.hint {
+  line-height: 1.5em;
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: start;
+  opacity: 0.6;
+}
+
 .instructions {
   padding: 14px;
   border: 1px solid rgb(119, 128, 128);
@@ -66,7 +77,19 @@ form {
 .poem strong {
   color: rgb(5, 150, 155);
 }
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
   font-size: 14px;
+}
+.generating {
+  animation: blinc 1s step-start 0s infinite;
+}
+
+@keyframes blinc {
+  50% {
+    opacity: 0;
+  }
 }
